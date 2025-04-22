@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Snake Game</h1>
+    <canvas id="gameCanvas" width="400" height="400"></canvas>
+    <div class="score">Score: <span id="score">0</span></div>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <div id="gameOverPopup" class="popup hidden">
+    <div class="popup-box">
+      <h2>Game Over</h2>
+      <p>Your score: <span id="finalScore">0</span></p>
+      <button onclick="restartGame()">Restart</button>
+      <button onclick="goBack()">Exit</button>
+    </div>
+  </div>
+
+  <script src="snake.js"></script>
+</body>
+</html>
