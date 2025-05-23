@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RetroRush - Maze Runner</title>
+  <link rel="stylesheet" href="maze.css">
+</head>
+<body>
+  <h1>Maze</h1>
+  <canvas id="maze" width="600" height="600"></canvas>
+  <button onclick="restartGame()">New Maze</button>
+  <button onclick="goBack()">Back</button>
+  <div id="win-popup" class="popup">
+    <div class="popup-box">
+      <h2>You Escaped!</h2>
+      <button id="restart">Play Again</button>
+      <button id="back">Back to Menu</button>
+    </div>
+  </div>
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+  <script src="maze.js"></script>
+</body>
+</html>

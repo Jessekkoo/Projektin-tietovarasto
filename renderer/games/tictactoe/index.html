@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RetroRush - Tic Tac Toe</title>
+  <link rel="stylesheet" href="tictactoe.css">
+</head>
+<body>
+  <div class="game-container">
+    <h1>Tic Tac Toe</h1>
+
+    <div class="modal" id="modeModal">
+      <div class="modal-content">
+        <h2>Select Game Mode</h2>
+        <button class="mode-btn" id="manualBtn">Manual Play (2 Players)</button>
+        <button class="mode-btn" id="autoBtn">Auto Play (vs Computer)</button>
+      </div>
+    </div>
+    <audio id="x-sound" src="../../sound/click.wav" preload="auto"></audio>
+    <audio id="o-sound" src="../../sound/click.wav" preload="auto"></audio>
+    <div class="board" id="board"></div>
+    <div class="status" id="status">Waiting for mode...</div>
+    <button class="reset-btn" id="resetBtn">Restart</button>
+    <button class="back-btn" onclick="goBack()">Back</button>
+  </div>
+  <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+  <script src="tictactoe.js"></script>
+</body>
+</html>

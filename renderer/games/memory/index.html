@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RetroRush - Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Memory Game</h1>
+    <div class="memory-game"></div>
+    <button class="mode-btn" id="new-game-btn">New Game</button>
+    <button class="mode-btn" id="back">Back</button>
+
+    <div class="popup" id="game-over-popup">
+        <div class="popup-box">
+            <h2>Game Over!</h2>
+            <p>Time: <span id="time-taken"></span>s</p>
+            <button class="mode-btn" id="new-game-popup-btn">New Game</button>
+            <button class="mode-btn" id="exit-btn">back to the menu</button>
+            
+        </div>
+    </div>
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+    <script src="script.js"></script>
+</body>
+</html>
