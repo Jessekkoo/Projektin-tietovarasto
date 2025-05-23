@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow } = require('electron');
 const path = require('path');
 
 function createMainWindow() {
@@ -11,9 +11,9 @@ function createMainWindow() {
     frame: true,
     webPreferences: {
       nodeIntegration: true,
-      contextIsolation: false,
-      
-    }
+      contextIsolation: false, 
+    },
+    icon: path.join(__dirname, './renderer/img/logo.png ')
   });
 
   win.loadFile('renderer/index.html');
@@ -23,10 +23,6 @@ function createMainWindow() {
 
 app.whenReady().then(() => {
   createMainWindow();
-
-  ipcMain.on('launch-tictactoe', () => {
-    openTicTacToeWindow();
-  });
 });
 
 app.on('window-all-closed', () => {
