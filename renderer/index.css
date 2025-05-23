@@ -1,0 +1,106 @@
+body {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-tap-highlight-color: transparent;    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #000000 0%, #0a0a0a 100%);
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center; 
+
+  }
+  body::-webkit-scrollbar {
+    width: 8px; 
+  }
+  
+  
+  body::-webkit-scrollbar-track {
+    background: #0a0a0a; 
+  }
+  
+ 
+  body::-webkit-scrollbar-thumb {
+    background: #0ff; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px #0ff;
+  }
+  
+  
+  body::-webkit-scrollbar-thumb:hover {
+    background: #00ffff;
+    box-shadow: 0 0 20px #0ff;
+  }
+  .background-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(0,255,255,0.1), transparent 70%);
+    z-index: 0;
+  }
+  .page-title {
+    z-index: 1;
+    font-size: 48px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .container {
+    z-index: 1;
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 30px;
+    padding: 20px;
+  }
+  
+  .game-box {
+    width: 280px;
+    height: 280px;
+    background: #0d0d0d;
+    border: 2px solid #0ff;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,255,255,0.4);
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+  }
+  
+  .game-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(0,255,255,0.7);
+  }
+  
+  .background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+  }
+  
+  .background.placeholder {
+    background-image: linear-gradient(135deg, #222, #111);
+  }
+  
+  .label {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+  }
+  

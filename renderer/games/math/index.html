@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>RetroRush - Quick Math Challenge</title>
+  <link rel="stylesheet" href="math.css">
+</head>
+<body>
+  <div class="game-container">
+    
+    <h1>Quick Math Challenge  </h1>
+
+    <div id="question" class="question">Loading...</div>
+    <div class="options">
+      <button onclick="checkAnswer(0)"> 1</button>
+      <button onclick="checkAnswer(1)">2</button>
+      <button onclick="checkAnswer(2)">3</button>
+      <button onclick="checkAnswer(3)">4</button>
+    </div>
+    <div class="score">Score: <span id="score">0</span> &nbsp;&nbsp;&nbsp;&nbsp;Timer: <span id="countdown" >6</span>s</div>
+    <button onclick="goBack()">Back</button>
+  </div>
+
+  <div id="gameOverPopup" class="popup hidden">
+    <div class="popup-box">
+      <h2>Game Over</h2>
+      <p>Your final score: <span id="finalScore">0</span></p>
+      <button onclick="restartGame()">Restart</button>
+      <button onclick="goBack()">Back to Menu</button>
+    </div>
+  </div>
+
+  <script src="math.js"></script>
+</body>
+</html>
